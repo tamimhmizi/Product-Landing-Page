@@ -1,0 +1,154 @@
+body{
+    background-color: #eee;
+    color: black;  
+    font-size: large;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(prefers-reduced-motion:no-preference){
+    *{scroll-behavior: smooth;}
+ }
+#header-img{
+    width: 300px;
+    height: auto;
+    
+}
+#header{
+    background-color: #eee;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 40px;
+    z-index: 1;
+}
+#nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-link:hover{
+    color: rgb(143, 143, 32);
+}
+.form{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+h1{
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+#email{
+    width: 300px;
+    height: 25px;
+}
+#submit ,button{
+    padding: 10px;
+    background-color: #f1c40f;
+    border: none;
+}
+i {
+    color: rgb(207, 135, 0);
+    margin-inline: auto;
+}
+#Features{
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    column-gap: 10px;
+    align-items: center;
+}
+#Features > div > p{
+  width: 80%;
+
+}
+#Pricing{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.h3{
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    border-radius:10px ;
+}
+footer{ 
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 2px;
+    text-align: right;
+    padding-top: 1px;
+    vertical-align: center;
+    background-color: lightgray;
+}
+@media only screen and (min-width:1000px){
+    #Pricing{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: -80px;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width:600px){
+    #header{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: -30px;
+    }
+    #header-img{
+        margin-top: 30px;
+    }
+}
+#HowItWorks{
+ margin-top: 200px;
+margin-bottom: 300px;
+}
+#HowItWorks > iframe {
+display: block;
+margin-inline: auto;
+
+}
+
+
+
